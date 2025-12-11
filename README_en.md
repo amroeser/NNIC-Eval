@@ -202,14 +202,14 @@ The split schemes correspond to the same 95/5, 72.5/22.5/5 and 47.5/47.5/5 scena
 
 Full experiment definitions are stored in `configs/experiments.yaml`. Each experiment includes among others:
 
-- **`experiment_name`**  unique name, used for output directories.
-- **`dataset`**  dataset selection and parameters (incl. `openml_id` for OpenML datasets).
-- **`splits`**  specification of `test_size`, `residual_size`, optional `val_size`, plus `random_state` and `stratify`.
-- **`model`**  MLP architecture (e.g. `hidden_layers`, `activation`, `dropout`).
-- **`training`**  batch size, epochs, learning rate, weight decay, device.
-- **`ic_generation`**  hyperparameters for IC mining (random forest / cluster-based).
-- **`ic_application`**  mode (`flagging` vs. `correction`) and collision handling.
-- **optional `baseline.rf`**  RF baseline on train/test.
+- **`experiment_name`**  unique name, used for output directories.
+- **`dataset`**  dataset selection and parameters (incl. `openml_id` for OpenML datasets).
+- **`splits`**  specification of `test_size`, `residual_size`, optional `val_size`, plus `random_state` and `stratify`.
+- **`model`**  MLP architecture (e.g. `hidden_layers`, `activation`, `dropout`).
+- **`training`**  batch size, epochs, learning rate, weight decay, device.
+- **`ic_generation`**  hyperparameters for IC mining (random forest / cluster-based).
+- **`ic_application`**  mode (`flagging` vs. `correction`) and collision handling.
+- **optional `baseline.rf`**  RF baseline on train/test.
 
 Example call for a single experiment:
 
@@ -271,10 +271,10 @@ flowchart TD
 
 - **Load config:** YAML config from `configs/` defines dataset, splits, model, IC settings, etc.
 - **Load & split data:**
-  - `train`  training the NN (and RF baseline, if enabled).
-  - `residual`  analysing misclassifications and mining ICs.
-  - `test`  final evaluation before/after IC application.
-  - optional `val`  hyperparameter tuning / monitoring.
+  - `train`  training the NN (and RF baseline, if enabled).
+  - `residual`  analysing misclassifications and mining ICs.
+  - `test`  final evaluation before/after IC application.
+  - optional `val`  hyperparameter tuning / monitoring.
 - **NN training:** MLP is trained on the training split; training history is stored in `logs/`.
 - **Pre-IC evaluation (`metrics_pre`):** metrics of the NN on the test split without ICs.
 - **Misclassifications & IC mining:**
