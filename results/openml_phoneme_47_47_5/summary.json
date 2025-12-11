@@ -103,9 +103,9 @@
     "fraction_flagged": 0.0959409594095941
   },
   "timing": {
-    "train_seconds": 0.4690909169994484,
-    "ic_generation_seconds": 0.031038416999763285,
-    "ic_application_seconds": 0.0013240830003269366
+    "train_seconds": 0.47466870900098,
+    "ic_generation_seconds": 0.024471999997331295,
+    "ic_application_seconds": 0.0013481669993780088
   },
   "model_complexity": {
     "nn_num_params": 2530,

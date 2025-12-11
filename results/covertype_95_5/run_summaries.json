@@ -138,7 +138,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 21.330146417000833,
+      "train_seconds": 22.663684875002218,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -287,7 +287,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 17.915514749999602,
+      "train_seconds": 18.27948975000254,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -436,7 +436,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 19.26089895899986,
+      "train_seconds": 19.643331875002332,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -585,7 +585,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 18.72861612500037,
+      "train_seconds": 19.12699133299975,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -734,7 +734,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 15.893169250000028,
+      "train_seconds": 16.77119329099878,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },

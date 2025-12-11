@@ -104,9 +104,9 @@
       "fraction_flagged": 0.18
     },
     "timing": {
-      "train_seconds": 0.0489809589998913,
-      "ic_generation_seconds": 0.0186817499998142,
-      "ic_application_seconds": 0.001314916999945126
+      "train_seconds": 0.0488744169997517,
+      "ic_generation_seconds": 0.02138508400093997,
+      "ic_application_seconds": 0.001105957999243401
     },
     "model_complexity": {
       "nn_num_params": 6114,
@@ -219,9 +219,9 @@
       "fraction_flagged": 0.06
     },
     "timing": {
-      "train_seconds": 0.055257166999581386,
-      "ic_generation_seconds": 0.02553375000024971,
-      "ic_application_seconds": 0.0010536669997236459
+      "train_seconds": 0.05586975000187522,
+      "ic_generation_seconds": 0.023807292000128655,
+      "ic_application_seconds": 0.001065042000846006
     },
     "model_complexity": {
       "nn_num_params": 6114,
@@ -334,9 +334,9 @@
       "fraction_flagged": 0.06
     },
     "timing": {
-      "train_seconds": 0.05572358300014457,
-      "ic_generation_seconds": 0.017005749999952968,
-      "ic_application_seconds": 0.0010854580004888703
+      "train_seconds": 0.05725983400043333,
+      "ic_generation_seconds": 0.01922937499693944,
+      "ic_application_seconds": 0.0010521250005695038
     },
     "model_complexity": {
       "nn_num_params": 6114,
@@ -449,9 +449,9 @@
       "fraction_flagged": 0.06
     },
     "timing": {
-      "train_seconds": 0.054398209000282804,
-      "ic_generation_seconds": 0.010630125000716362,
-      "ic_application_seconds": 0.0010303330000169808
+      "train_seconds": 0.05152683299820637,
+      "ic_generation_seconds": 0.014627332999225473,
+      "ic_application_seconds": 0.00104841600114014
     },
     "model_complexity": {
       "nn_num_params": 6114,
@@ -564,9 +564,9 @@
       "fraction_flagged": 0.06
     },
     "timing": {
-      "train_seconds": 0.053684833999795956,
-      "ic_generation_seconds": 0.013047083999481401,
-      "ic_application_seconds": 0.0009824999997363193
+      "train_seconds": 0.056207542002084665,
+      "ic_generation_seconds": 0.013528416999179171,
+      "ic_application_seconds": 0.0009982499977922998
     },
     "model_complexity": {
       "nn_num_params": 6114,

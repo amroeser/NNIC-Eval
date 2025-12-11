@@ -87,7 +87,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 0.6818236250001064,
+      "train_seconds": 0.7188810420011578,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -185,7 +185,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 0.6554402500005381,
+      "train_seconds": 0.7096727919997647,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -283,7 +283,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 0.6601896669999405,
+      "train_seconds": 0.6985347080008069,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -381,7 +381,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 0.6588709170000584,
+      "train_seconds": 0.6829632920016593,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },
@@ -479,7 +479,7 @@
       "fraction_flagged": 0.0
     },
     "timing": {
-      "train_seconds": 0.6626609999993889,
+      "train_seconds": 0.6678044169966597,
       "ic_generation_seconds": null,
       "ic_application_seconds": null
     },

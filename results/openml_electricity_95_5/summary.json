@@ -86,7 +86,7 @@
     "fraction_flagged": 0.0
   },
   "timing": {
-    "train_seconds": 1.7064931249997244,
+    "train_seconds": 1.7190292089981085,
     "ic_generation_seconds": null,
     "ic_application_seconds": null
   },
