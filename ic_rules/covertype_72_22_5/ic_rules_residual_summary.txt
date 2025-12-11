@@ -1,0 +1,1 @@
+IC 0: IF (f9 > 0.0000 AND f9 <= 1624.0000 AND f0 > 1879.0000 AND f0 <= 3433.0000 AND f5 > 0.0000 AND f5 <= 1440.0000 AND f3 > 0.0000 AND f3 <= 745.0000 AND f4 > -126.0000 AND f4 <= 286.0000) THEN flag_unreliable [support=28201, error_fraction=0.306]

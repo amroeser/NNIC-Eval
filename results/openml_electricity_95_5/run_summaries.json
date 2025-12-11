@@ -1,0 +1,492 @@
+[
+  {
+    "experiment_name": "openml_electricity_95_5",
+    "dataset": "electricity",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 43046,
+      "val": 0,
+      "residual": 0,
+      "test": 2266
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "openml_electricity_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 151
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 10,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 100,
+        "min_expected_gain": 10,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7705207413945278,
+      "precision": 0.7693876216858776,
+      "recall": 0.7705207413945278,
+      "f1": 0.7693645611225094,
+      "confusion_matrix": [
+        [
+          1075,
+          229
+        ],
+        [
+          291,
+          671
+        ]
+      ],
+      "num_errors": 520,
+      "error_rate": 0.2294792586054722
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 1.6721387499992488,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 10306,
+      "nn_flops_approx": 20224,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_electricity_95_5",
+    "dataset": "electricity",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 43046,
+      "val": 0,
+      "residual": 0,
+      "test": 2266
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "openml_electricity_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 151
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 10,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 100,
+        "min_expected_gain": 10,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7780229479258606,
+      "precision": 0.7770405117046987,
+      "recall": 0.7780229479258606,
+      "f1": 0.7771296122229165,
+      "confusion_matrix": [
+        [
+          1078,
+          226
+        ],
+        [
+          277,
+          685
+        ]
+      ],
+      "num_errors": 503,
+      "error_rate": 0.22197705207413945
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 1.7185775000007197,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 10306,
+      "nn_flops_approx": 20224,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_electricity_95_5",
+    "dataset": "electricity",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 43046,
+      "val": 0,
+      "residual": 0,
+      "test": 2266
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "openml_electricity_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 151
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 10,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 100,
+        "min_expected_gain": 10,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7758164165931156,
+      "precision": 0.7757221596533758,
+      "recall": 0.7758164165931156,
+      "f1": 0.7728459888650739,
+      "confusion_matrix": [
+        [
+          1118,
+          186
+        ],
+        [
+          322,
+          640
+        ]
+      ],
+      "num_errors": 508,
+      "error_rate": 0.22418358340688438
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 1.701661167000566,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 10306,
+      "nn_flops_approx": 20224,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_electricity_95_5",
+    "dataset": "electricity",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 43046,
+      "val": 0,
+      "residual": 0,
+      "test": 2266
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "openml_electricity_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 151
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 10,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 100,
+        "min_expected_gain": 10,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7656663724624889,
+      "precision": 0.7645610505735074,
+      "recall": 0.7656663724624889,
+      "f1": 0.7635433037907404,
+      "confusion_matrix": [
+        [
+          1089,
+          215
+        ],
+        [
+          316,
+          646
+        ]
+      ],
+      "num_errors": 531,
+      "error_rate": 0.23433362753751102
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 1.7027710000002116,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 10306,
+      "nn_flops_approx": 20224,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_electricity_95_5",
+    "dataset": "electricity",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 43046,
+      "val": 0,
+      "residual": 0,
+      "test": 2266
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "openml_electricity_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 151
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 10,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 100,
+        "min_expected_gain": 10,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7727272727272727,
+      "precision": 0.7716018293614975,
+      "recall": 0.7727272727272727,
+      "f1": 0.771248706145398,
+      "confusion_matrix": [
+        [
+          1085,
+          219
+        ],
+        [
+          296,
+          666
+        ]
+      ],
+      "num_errors": 515,
+      "error_rate": 0.22727272727272727
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 1.7064931249997244,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 10306,
+      "nn_flops_approx": 20224,
+      "ic_rf": null
+    }
+  }
+]

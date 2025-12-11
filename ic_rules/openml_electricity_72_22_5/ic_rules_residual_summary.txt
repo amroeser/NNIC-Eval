@@ -1,0 +1,6 @@
+IC 0: IF (f1 > 0.0000 AND f1 <= 1.0000 AND f6 > 0.3509 AND f6 <= 0.9276 AND f0 > 0.4426 AND f0 <= 0.9956 AND f3 > 0.1546 AND f3 <= 0.6433 AND f5 > 0.1046 AND f5 <= 0.5445) THEN flag_unreliable [support=674, error_fraction=0.329]
+IC 1: IF (f1 > 0.0000 AND f1 <= 1.0000 AND f0 > 0.0002 AND f0 <= 0.9158 AND f6 > 0.2132 AND f6 <= 0.8895 AND f3 > 0.0543 AND f3 <= 0.7236 AND f5 > 0.1841 AND f5 <= 0.5347) THEN flag_unreliable [support=1200, error_fraction=0.269]
+IC 2: IF (f1 > 0.0000 AND f1 <= 1.0000 AND f0 > 0.0002 AND f0 <= 0.9910 AND f6 > 0.0640 AND f6 <= 0.9035 AND f3 > 0.1092 AND f3 <= 0.8704 AND f5 > 0.0961 AND f5 <= 0.7651) THEN flag_unreliable [support=1387, error_fraction=0.251]
+IC 3: IF (f1 > 0.0000 AND f1 <= 1.0000 AND f6 > 0.1009 AND f6 <= 0.8553 AND f3 > 0.1657 AND f3 <= 0.8713 AND f5 > 0.2758 AND f5 <= 0.8563 AND f0 > 0.8672 AND f0 <= 0.9822) THEN flag_unreliable [support=406, error_fraction=0.362]
+IC 4: IF (f1 > 0.0000 AND f1 <= 1.0000 AND f6 > 0.1303 AND f6 <= 0.8351 AND f3 > 0.2029 AND f3 <= 0.8575 AND f5 > 0.2338 AND f5 <= 0.8400 AND f0 > 0.8670 AND f0 <= 0.9866) THEN flag_unreliable [support=384, error_fraction=0.354]
+IC 5: IF (f1 > 0.0000 AND f1 <= 1.0000 AND f6 > 0.1311 AND f6 <= 0.8693 AND f3 > 0.1410 AND f3 <= 0.8102 AND f5 > 0.1546 AND f5 <= 0.7216 AND f0 > 0.0001 AND f0 <= 0.4868) THEN flag_unreliable [support=863, error_fraction=0.253]

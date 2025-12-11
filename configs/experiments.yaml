@@ -1,0 +1,1384 @@
+name: nnic_master_experiments
+n_runs: 5
+
+experiments:
+  # digits
+  - experiment_name: digits_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: digits
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 64
+      num_epochs: 5
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      rf_n_estimators: 50
+      rf_max_depth: null
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.6
+      min_support: 10
+    ic_application:
+      mode: flagging
+
+  - experiment_name: digits_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: digits
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 64
+      num_epochs: 5
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 3
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: digits_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: digits
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 64
+      num_epochs: 5
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 3
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # covertype
+  - experiment_name: covertype_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: covertype
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [256, 128]
+      activation: relu
+      dropout: 0.1
+    training:
+      batch_size: 256
+      num_epochs: 5
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      rf_n_estimators: 100
+      rf_max_depth: null
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.6
+      min_support: 50
+    ic_application:
+      mode: flagging
+
+  - experiment_name: covertype_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: covertype
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [256, 128]
+      activation: relu
+      dropout: 0.1
+    training:
+      batch_size: 256
+      num_epochs: 5
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 12
+      rf_min_samples_leaf: 20
+      rf_random_state: 42
+      min_error_fraction: 0.3
+      min_support: 40
+      error_class_weight: 10.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: covertype_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: covertype
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 3
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 12
+      rf_min_samples_leaf: 20
+      rf_random_state: 42
+      min_error_fraction: 0.3
+      min_support: 50
+      error_class_weight: 10.0
+    ic_application:
+      mode: correction
+
+  # wine
+  - experiment_name: wine_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: wine
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 64
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      rf_n_estimators: 50
+      rf_max_depth: null
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.6
+      min_support: 5
+    ic_application:
+      mode: flagging
+
+  - experiment_name: wine_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: wine
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 64
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 2
+      error_class_weight: 10.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: wine_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: wine
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 64
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 2
+      error_class_weight: 10.0
+    ic_application:
+      mode: correction
+
+  # iris
+  - experiment_name: iris_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: iris
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [32]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 16
+      num_epochs: 20
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 4
+      rf_min_samples_leaf: 2
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 2
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: iris_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: iris
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [32]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 16
+      num_epochs: 20
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 4
+      rf_min_samples_leaf: 2
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 2
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: iris_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: iris
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [32]
+      activation: relu
+      dropout: 0.0
+    training:
+      batch_size: 16
+      num_epochs: 20
+      learning_rate: 0.001
+      weight_decay: 0.0
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 4
+      rf_min_samples_leaf: 2
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 2
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # breast cancer
+  - experiment_name: breast_cancer_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: breast_cancer
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 64
+      num_epochs: 15
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: credit-g (31)
+  - experiment_name: openml_creditg_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 31
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 128
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 10
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_creditg_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 31
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 128
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 10
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_creditg_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 31
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 128
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 10
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: bank-marketing (1461)
+  - experiment_name: openml_bank_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1461
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 8
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_bank_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1461
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 8
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_bank_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1461
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 8
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: adult (45068)
+  - experiment_name: openml_adult_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 45068
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 200
+      min_expected_gain: 10
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_adult_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 45068
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 200
+      min_expected_gain: 10
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_adult_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 45068
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 200
+      min_expected_gain: 10
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: breast_cancer_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: breast_cancer
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 64
+      num_epochs: 15
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: breast_cancer_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: breast_cancer
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 64
+      num_epochs: 15
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: spambase (44)
+  - experiment_name: openml_spambase_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 44
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 128
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 8
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 10
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_spambase_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 44
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 128
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 8
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 10
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_spambase_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 44
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 128
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 8
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 10
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: phoneme (1489)
+  - experiment_name: openml_phoneme_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1489
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 64
+      num_epochs: 20
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 5
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_phoneme_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1489
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 64
+      num_epochs: 20
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 5
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_phoneme_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1489
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 64
+      num_epochs: 20
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 50
+      rf_max_depth: 6
+      rf_min_samples_leaf: 3
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 5
+      min_expected_gain: 1
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: nomao (1486)
+  - experiment_name: openml_nomao_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1486
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_nomao_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1486
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_nomao_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1486
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: Magic Telescope (1120)
+  - experiment_name: openml_magic_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1120
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 8
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_magic_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1120
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 8
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_magic_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 1120
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [64, 32]
+      activation: relu
+      dropout: 0.2
+    training:
+      batch_size: 256
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 8
+      rf_min_samples_leaf: 5
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 50
+      min_expected_gain: 5
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  # OpenML: electricity (151)
+  - experiment_name: openml_electricity_95_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 151
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.0
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 100
+      min_expected_gain: 10
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_electricity_72_22_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 151
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.225
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 100
+      min_expected_gain: 10
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction
+
+  - experiment_name: openml_electricity_47_47_5
+    seed: 42
+    base_output_dir: .
+    dataset:
+      name: openml
+      openml_id: 151
+    splits:
+      test_size: 0.05
+      val_size: 0.0
+      residual_size: 0.475
+      random_state: 42
+      stratify: true
+    model:
+      type: mlp
+      hidden_layers: [128, 64]
+      activation: relu
+      dropout: 0.3
+    training:
+      batch_size: 512
+      num_epochs: 10
+      learning_rate: 0.001
+      weight_decay: 0.0001
+      device: cpu
+    ic_generation:
+      miner: cluster
+      rf_n_estimators: 100
+      rf_max_depth: 10
+      rf_min_samples_leaf: 10
+      rf_random_state: 42
+      min_error_fraction: 0.25
+      min_support: 100
+      min_expected_gain: 10
+      error_class_weight: 5.0
+    ic_application:
+      mode: correction

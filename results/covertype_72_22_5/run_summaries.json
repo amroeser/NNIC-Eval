@@ -1,0 +1,1045 @@
+[
+  {
+    "experiment_name": "covertype_72_22_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 421233,
+      "val": 0,
+      "residual": 130728,
+      "test": 29051
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "covertype_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 40,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7400433720009638,
+      "precision": 0.7421376775989433,
+      "recall": 0.7400433720009638,
+      "f1": 0.7276371064336452,
+      "confusion_matrix": [
+        [
+          7441,
+          3095,
+          0,
+          0,
+          1,
+          0,
+          55
+        ],
+        [
+          1988,
+          11999,
+          138,
+          0,
+          6,
+          30,
+          4
+        ],
+        [
+          0,
+          334,
+          1369,
+          1,
+          0,
+          84,
+          0
+        ],
+        [
+          0,
+          0,
+          87,
+          36,
+          0,
+          14,
+          0
+        ],
+        [
+          1,
+          412,
+          12,
+          0,
+          48,
+          2,
+          0
+        ],
+        [
+          1,
+          273,
+          429,
+          0,
+          0,
+          165,
+          0
+        ],
+        [
+          574,
+          11,
+          0,
+          0,
+          0,
+          0,
+          441
+        ]
+      ],
+      "num_errors": 7552,
+      "error_rate": 0.2599566279990362
+    },
+    "metrics_post": {
+      "accuracy": 0.7696120615469347,
+      "precision": 0.7799993645547341,
+      "recall": 0.7696120615469347,
+      "f1": 0.7558801214588617,
+      "confusion_matrix": [
+        [
+          7758,
+          2791,
+          0,
+          0,
+          0,
+          0,
+          43
+        ],
+        [
+          1582,
+          12541,
+          30,
+          0,
+          2,
+          8,
+          2
+        ],
+        [
+          0,
+          401,
+          1369,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          45,
+          46,
+          36,
+          0,
+          10,
+          0
+        ],
+        [
+          9,
+          405,
+          11,
+          0,
+          48,
+          2,
+          0
+        ],
+        [
+          1,
+          578,
+          124,
+          0,
+          0,
+          165,
+          0
+        ],
+        [
+          530,
+          55,
+          0,
+          0,
+          0,
+          0,
+          441
+        ]
+      ],
+      "num_errors": 6693,
+      "error_rate": 0.2303879384530653
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 2,
+      "fraction_flagged": 0.07617637947058621
+    },
+    "timing": {
+      "train_seconds": 17.211959833000037,
+      "ic_generation_seconds": 1.8050070839999535,
+      "ic_application_seconds": 0.015655832999982522
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_72_22_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 421233,
+      "val": 0,
+      "residual": 130728,
+      "test": 29051
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "covertype_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 40,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7526763278372517,
+      "precision": 0.7577670687686764,
+      "recall": 0.7526763278372517,
+      "f1": 0.7447260278792869,
+      "confusion_matrix": [
+        [
+          6878,
+          3581,
+          0,
+          0,
+          1,
+          2,
+          130
+        ],
+        [
+          1462,
+          12481,
+          130,
+          1,
+          9,
+          75,
+          7
+        ],
+        [
+          0,
+          215,
+          1315,
+          17,
+          0,
+          241,
+          0
+        ],
+        [
+          0,
+          0,
+          43,
+          68,
+          0,
+          26,
+          0
+        ],
+        [
+          0,
+          388,
+          18,
+          0,
+          67,
+          2,
+          0
+        ],
+        [
+          2,
+          216,
+          235,
+          5,
+          0,
+          410,
+          0
+        ],
+        [
+          368,
+          11,
+          0,
+          0,
+          0,
+          0,
+          647
+        ]
+      ],
+      "num_errors": 7185,
+      "error_rate": 0.24732367216274828
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 13.93613008400007,
+      "ic_generation_seconds": 1.7943441659999735,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_72_22_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 421233,
+      "val": 0,
+      "residual": 130728,
+      "test": 29051
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "covertype_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 40,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7372207497160167,
+      "precision": 0.741373386158563,
+      "recall": 0.7372207497160167,
+      "f1": 0.7260405827865417,
+      "confusion_matrix": [
+        [
+          7315,
+          3223,
+          2,
+          0,
+          2,
+          2,
+          48
+        ],
+        [
+          1765,
+          12036,
+          257,
+          0,
+          4,
+          97,
+          6
+        ],
+        [
+          0,
+          170,
+          1353,
+          0,
+          0,
+          265,
+          0
+        ],
+        [
+          0,
+          3,
+          91,
+          10,
+          0,
+          33,
+          0
+        ],
+        [
+          0,
+          425,
+          9,
+          0,
+          33,
+          8,
+          0
+        ],
+        [
+          1,
+          167,
+          397,
+          1,
+          0,
+          302,
+          0
+        ],
+        [
+          637,
+          21,
+          0,
+          0,
+          0,
+          0,
+          368
+        ]
+      ],
+      "num_errors": 7634,
+      "error_rate": 0.26277925028398336
+    },
+    "metrics_post": {
+      "accuracy": 0.7683728615193969,
+      "precision": 0.7781911006648915,
+      "recall": 0.7683728615193969,
+      "f1": 0.7571462174907524,
+      "confusion_matrix": [
+        [
+          8220,
+          2328,
+          2,
+          0,
+          1,
+          2,
+          39
+        ],
+        [
+          2025,
+          12036,
+          78,
+          0,
+          0,
+          23,
+          3
+        ],
+        [
+          306,
+          97,
+          1353,
+          0,
+          0,
+          32,
+          0
+        ],
+        [
+          74,
+          1,
+          30,
+          10,
+          0,
+          22,
+          0
+        ],
+        [
+          163,
+          272,
+          4,
+          0,
+          33,
+          3,
+          0
+        ],
+        [
+          348,
+          133,
+          85,
+          0,
+          0,
+          302,
+          0
+        ],
+        [
+          637,
+          21,
+          0,
+          0,
+          0,
+          0,
+          368
+        ]
+      ],
+      "num_errors": 6729,
+      "error_rate": 0.23162713848060307
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 2,
+      "fraction_flagged": 0.0879487797321951
+    },
+    "timing": {
+      "train_seconds": 14.671567083999435,
+      "ic_generation_seconds": 1.809712500000387,
+      "ic_application_seconds": 0.016440667000097164
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_72_22_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 421233,
+      "val": 0,
+      "residual": 130728,
+      "test": 29051
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "covertype_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 40,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7479949055109979,
+      "precision": 0.7528131189312802,
+      "recall": 0.7479949055109979,
+      "f1": 0.7345357407170492,
+      "confusion_matrix": [
+        [
+          7587,
+          2973,
+          1,
+          0,
+          0,
+          0,
+          31
+        ],
+        [
+          1995,
+          11997,
+          136,
+          0,
+          5,
+          30,
+          2
+        ],
+        [
+          0,
+          256,
+          1488,
+          7,
+          0,
+          37,
+          0
+        ],
+        [
+          0,
+          1,
+          83,
+          50,
+          0,
+          3,
+          0
+        ],
+        [
+          4,
+          424,
+          12,
+          0,
+          32,
+          3,
+          0
+        ],
+        [
+          1,
+          242,
+          463,
+          1,
+          0,
+          161,
+          0
+        ],
+        [
+          592,
+          19,
+          0,
+          0,
+          0,
+          0,
+          415
+        ]
+      ],
+      "num_errors": 7321,
+      "error_rate": 0.2520050944890021
+    },
+    "metrics_post": {
+      "accuracy": 0.7610409280231317,
+      "precision": 0.7653530297000575,
+      "recall": 0.7610409280231317,
+      "f1": 0.7477968746861942,
+      "confusion_matrix": [
+        [
+          7966,
+          2599,
+          1,
+          0,
+          0,
+          0,
+          26
+        ],
+        [
+          1995,
+          11997,
+          136,
+          0,
+          5,
+          30,
+          2
+        ],
+        [
+          0,
+          256,
+          1488,
+          7,
+          0,
+          37,
+          0
+        ],
+        [
+          0,
+          1,
+          83,
+          50,
+          0,
+          3,
+          0
+        ],
+        [
+          10,
+          418,
+          12,
+          0,
+          32,
+          3,
+          0
+        ],
+        [
+          1,
+          242,
+          463,
+          1,
+          0,
+          161,
+          0
+        ],
+        [
+          592,
+          19,
+          0,
+          0,
+          0,
+          0,
+          415
+        ]
+      ],
+      "num_errors": 6942,
+      "error_rate": 0.23895907197686828
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 1,
+      "fraction_flagged": 0.016350555918901243
+    },
+    "timing": {
+      "train_seconds": 14.06274408399986,
+      "ic_generation_seconds": 1.7807921250005165,
+      "ic_application_seconds": 0.009231625000211352
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_72_22_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 421233,
+      "val": 0,
+      "residual": 130728,
+      "test": 29051
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "covertype_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 40,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7308870606863791,
+      "precision": 0.7413827409862409,
+      "recall": 0.7308870606863791,
+      "f1": 0.7155480713419331,
+      "confusion_matrix": [
+        [
+          6543,
+          4030,
+          3,
+          0,
+          0,
+          1,
+          15
+        ],
+        [
+          1277,
+          12606,
+          183,
+          0,
+          2,
+          96,
+          1
+        ],
+        [
+          0,
+          177,
+          1402,
+          5,
+          0,
+          204,
+          0
+        ],
+        [
+          0,
+          0,
+          81,
+          40,
+          0,
+          16,
+          0
+        ],
+        [
+          10,
+          425,
+          15,
+          0,
+          22,
+          3,
+          0
+        ],
+        [
+          1,
+          193,
+          370,
+          4,
+          0,
+          300,
+          0
+        ],
+        [
+          676,
+          29,
+          1,
+          0,
+          0,
+          0,
+          320
+        ]
+      ],
+      "num_errors": 7818,
+      "error_rate": 0.26911293931362085
+    },
+    "metrics_post": {
+      "accuracy": 0.7466868610374858,
+      "precision": 0.7554788787463576,
+      "recall": 0.7466868610374858,
+      "f1": 0.7320090217316704,
+      "confusion_matrix": [
+        [
+          7002,
+          3574,
+          3,
+          0,
+          0,
+          1,
+          12
+        ],
+        [
+          1465,
+          12606,
+          65,
+          0,
+          2,
+          27,
+          0
+        ],
+        [
+          274,
+          85,
+          1402,
+          2,
+          0,
+          25,
+          0
+        ],
+        [
+          41,
+          0,
+          47,
+          40,
+          0,
+          9,
+          0
+        ],
+        [
+          154,
+          292,
+          5,
+          0,
+          22,
+          2,
+          0
+        ],
+        [
+          352,
+          123,
+          91,
+          2,
+          0,
+          300,
+          0
+        ],
+        [
+          676,
+          29,
+          1,
+          0,
+          0,
+          0,
+          320
+        ]
+      ],
+      "num_errors": 7359,
+      "error_rate": 0.2533131389625142
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 1,
+      "fraction_flagged": 0.061099445802209905
+    },
+    "timing": {
+      "train_seconds": 13.876112291999561,
+      "ic_generation_seconds": 2.4599115830005758,
+      "ic_application_seconds": 0.012728374999824155
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  }
+]

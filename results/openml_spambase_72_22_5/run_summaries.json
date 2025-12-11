@@ -1,0 +1,577 @@
+[
+  {
+    "experiment_name": "openml_spambase_72_22_5",
+    "dataset": "spambase",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 3335,
+      "val": 0,
+      "residual": 1035,
+      "test": 231
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "openml_spambase_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 44
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 8,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8571428571428571,
+      "precision": 0.8575331125827815,
+      "recall": 0.8571428571428571,
+      "f1": 0.8552480858503647,
+      "confusion_matrix": [
+        [
+          129,
+          11
+        ],
+        [
+          22,
+          69
+        ]
+      ],
+      "num_errors": 33,
+      "error_rate": 0.14285714285714285
+    },
+    "metrics_post": {
+      "accuracy": 0.8701298701298701,
+      "precision": 0.8713887711222821,
+      "recall": 0.8701298701298701,
+      "f1": 0.8682147827997949,
+      "confusion_matrix": [
+        [
+          131,
+          9
+        ],
+        [
+          21,
+          70
+        ]
+      ],
+      "num_errors": 30,
+      "error_rate": 0.12987012987012986
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 5,
+      "fraction_flagged": 0.017316017316017316
+    },
+    "timing": {
+      "train_seconds": 0.21294987500004936,
+      "ic_generation_seconds": 0.03156445799959329,
+      "ic_application_seconds": 0.0013031660000706324
+    },
+    "model_complexity": {
+      "nn_num_params": 5858,
+      "nn_flops_approx": 11520,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_spambase_72_22_5",
+    "dataset": "spambase",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 3335,
+      "val": 0,
+      "residual": 1035,
+      "test": 231
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "openml_spambase_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 44
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 8,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8571428571428571,
+      "precision": 0.8617557251908396,
+      "recall": 0.8571428571428571,
+      "f1": 0.858136434767489,
+      "confusion_matrix": [
+        [
+          119,
+          21
+        ],
+        [
+          12,
+          79
+        ]
+      ],
+      "num_errors": 33,
+      "error_rate": 0.14285714285714285
+    },
+    "metrics_post": {
+      "accuracy": 0.8571428571428571,
+      "precision": 0.8617557251908396,
+      "recall": 0.8571428571428571,
+      "f1": 0.858136434767489,
+      "confusion_matrix": [
+        [
+          119,
+          21
+        ],
+        [
+          12,
+          79
+        ]
+      ],
+      "num_errors": 33,
+      "error_rate": 0.14285714285714285
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 4,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 0.23173966700051096,
+      "ic_generation_seconds": 0.03642479199970694,
+      "ic_application_seconds": 0.0011363749999873107
+    },
+    "model_complexity": {
+      "nn_num_params": 5858,
+      "nn_flops_approx": 11520,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_spambase_72_22_5",
+    "dataset": "spambase",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 3335,
+      "val": 0,
+      "residual": 1035,
+      "test": 231
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "openml_spambase_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 44
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 8,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7965367965367965,
+      "precision": 0.7951325605696095,
+      "recall": 0.7965367965367965,
+      "f1": 0.7954477874192415,
+      "confusion_matrix": [
+        [
+          119,
+          21
+        ],
+        [
+          26,
+          65
+        ]
+      ],
+      "num_errors": 47,
+      "error_rate": 0.20346320346320346
+    },
+    "metrics_post": {
+      "accuracy": 0.7965367965367965,
+      "precision": 0.7951325605696095,
+      "recall": 0.7965367965367965,
+      "f1": 0.7954477874192415,
+      "confusion_matrix": [
+        [
+          119,
+          21
+        ],
+        [
+          26,
+          65
+        ]
+      ],
+      "num_errors": 47,
+      "error_rate": 0.20346320346320346
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 5,
+      "fraction_flagged": 0.004329004329004329
+    },
+    "timing": {
+      "train_seconds": 0.2330473339998207,
+      "ic_generation_seconds": 0.03250750000006519,
+      "ic_application_seconds": 0.0010784999994939426
+    },
+    "model_complexity": {
+      "nn_num_params": 5858,
+      "nn_flops_approx": 11520,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_spambase_72_22_5",
+    "dataset": "spambase",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 3335,
+      "val": 0,
+      "residual": 1035,
+      "test": 231
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "openml_spambase_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 44
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 8,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8268398268398268,
+      "precision": 0.8347067324133215,
+      "recall": 0.8268398268398268,
+      "f1": 0.8205236912765227,
+      "confusion_matrix": [
+        [
+          132,
+          8
+        ],
+        [
+          32,
+          59
+        ]
+      ],
+      "num_errors": 40,
+      "error_rate": 0.17316017316017315
+    },
+    "metrics_post": {
+      "accuracy": 0.8311688311688312,
+      "precision": 0.8383911288999705,
+      "recall": 0.8311688311688312,
+      "f1": 0.8253655554234669,
+      "confusion_matrix": [
+        [
+          132,
+          8
+        ],
+        [
+          31,
+          60
+        ]
+      ],
+      "num_errors": 39,
+      "error_rate": 0.16883116883116883
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 5,
+      "fraction_flagged": 0.004329004329004329
+    },
+    "timing": {
+      "train_seconds": 0.2308740830003444,
+      "ic_generation_seconds": 0.031862709000051836,
+      "ic_application_seconds": 0.0011792080003942829
+    },
+    "model_complexity": {
+      "nn_num_params": 5858,
+      "nn_flops_approx": 11520,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_spambase_72_22_5",
+    "dataset": "spambase",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.225
+    },
+    "split_counts": {
+      "train": 3335,
+      "val": 0,
+      "residual": 1035,
+      "test": 231
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "openml_spambase_72_22_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 44
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.225,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 8,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8398268398268398,
+      "precision": 0.8391890752342545,
+      "recall": 0.8398268398268398,
+      "f1": 0.8381545316961442,
+      "confusion_matrix": [
+        [
+          126,
+          14
+        ],
+        [
+          23,
+          68
+        ]
+      ],
+      "num_errors": 37,
+      "error_rate": 0.16017316017316016
+    },
+    "metrics_post": {
+      "accuracy": 0.8441558441558441,
+      "precision": 0.8438458660680883,
+      "recall": 0.8441558441558441,
+      "f1": 0.842312458992491,
+      "confusion_matrix": [
+        [
+          127,
+          13
+        ],
+        [
+          23,
+          68
+        ]
+      ],
+      "num_errors": 36,
+      "error_rate": 0.15584415584415584
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 4,
+      "fraction_flagged": 0.008658008658008658
+    },
+    "timing": {
+      "train_seconds": 0.23320191699986026,
+      "ic_generation_seconds": 0.03238183299981756,
+      "ic_application_seconds": 0.0011383329992895597
+    },
+    "model_complexity": {
+      "nn_num_params": 5858,
+      "nn_flops_approx": 11520,
+      "ic_rf": null
+    }
+  }
+]

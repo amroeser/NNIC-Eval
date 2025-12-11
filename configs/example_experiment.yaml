@@ -1,0 +1,26 @@
+experiment_name: example_digits_95_5
+seed: 42
+base_output_dir: .
+
+dataset:
+  name: digits
+
+splits:
+  test_size: 0.05
+  val_size: 0.0
+  residual_size: 0.0
+  random_state: 42
+  stratify: true
+
+model:
+  type: mlp
+  hidden_layers: [128, 64]
+  activation: relu
+  dropout: 0.0
+
+training:
+  batch_size: 64
+  num_epochs: 5
+  learning_rate: 0.001
+  weight_decay: 0.0
+  device: cpu

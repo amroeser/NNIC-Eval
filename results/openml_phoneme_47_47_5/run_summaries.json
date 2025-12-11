@@ -1,0 +1,577 @@
+[
+  {
+    "experiment_name": "openml_phoneme_47_47_5",
+    "dataset": "phoneme",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 2566,
+      "val": 0,
+      "residual": 2567,
+      "test": 271
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "openml_phoneme_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 1489
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 64,
+        "num_epochs": 20,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 5,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8191881918819188,
+      "precision": 0.8146486669092043,
+      "recall": 0.8191881918819188,
+      "f1": 0.8158807148275409,
+      "confusion_matrix": [
+        [
+          171,
+          20
+        ],
+        [
+          29,
+          51
+        ]
+      ],
+      "num_errors": 49,
+      "error_rate": 0.18081180811808117
+    },
+    "metrics_post": {
+      "accuracy": 0.8966789667896679,
+      "precision": 0.8955595062023494,
+      "recall": 0.8966789667896679,
+      "f1": 0.8958896802997524,
+      "confusion_matrix": [
+        [
+          179,
+          12
+        ],
+        [
+          16,
+          64
+        ]
+      ],
+      "num_errors": 28,
+      "error_rate": 0.1033210332103321
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 7,
+      "fraction_flagged": 0.1070110701107011
+    },
+    "timing": {
+      "train_seconds": 0.5157352920004996,
+      "ic_generation_seconds": 0.02649299999939103,
+      "ic_application_seconds": 0.0012036250000164728
+    },
+    "model_complexity": {
+      "nn_num_params": 2530,
+      "nn_flops_approx": 4864,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_phoneme_47_47_5",
+    "dataset": "phoneme",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 2566,
+      "val": 0,
+      "residual": 2567,
+      "test": 271
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "openml_phoneme_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 1489
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 64,
+        "num_epochs": 20,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 5,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8265682656826568,
+      "precision": 0.8272149212720198,
+      "recall": 0.8265682656826568,
+      "f1": 0.8268792728520037,
+      "confusion_matrix": [
+        [
+          167,
+          24
+        ],
+        [
+          23,
+          57
+        ]
+      ],
+      "num_errors": 47,
+      "error_rate": 0.17343173431734318
+    },
+    "metrics_post": {
+      "accuracy": 0.9040590405904059,
+      "precision": 0.9040590405904059,
+      "recall": 0.9040590405904059,
+      "f1": 0.9040590405904059,
+      "confusion_matrix": [
+        [
+          178,
+          13
+        ],
+        [
+          13,
+          67
+        ]
+      ],
+      "num_errors": 26,
+      "error_rate": 0.0959409594095941
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 8,
+      "fraction_flagged": 0.0996309963099631
+    },
+    "timing": {
+      "train_seconds": 0.5195337499999368,
+      "ic_generation_seconds": 0.026419124999847554,
+      "ic_application_seconds": 0.0012662079998335685
+    },
+    "model_complexity": {
+      "nn_num_params": 2530,
+      "nn_flops_approx": 4864,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_phoneme_47_47_5",
+    "dataset": "phoneme",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 2566,
+      "val": 0,
+      "residual": 2567,
+      "test": 271
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "openml_phoneme_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 1489
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 64,
+        "num_epochs": 20,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 5,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8376383763837638,
+      "precision": 0.8388883888838888,
+      "recall": 0.8376383763837638,
+      "f1": 0.8382133411977396,
+      "confusion_matrix": [
+        [
+          168,
+          23
+        ],
+        [
+          21,
+          59
+        ]
+      ],
+      "num_errors": 44,
+      "error_rate": 0.16236162361623616
+    },
+    "metrics_post": {
+      "accuracy": 0.915129151291513,
+      "precision": 0.9148459759914055,
+      "recall": 0.915129151291513,
+      "f1": 0.9149730592827876,
+      "confusion_matrix": [
+        [
+          180,
+          11
+        ],
+        [
+          12,
+          68
+        ]
+      ],
+      "num_errors": 23,
+      "error_rate": 0.08487084870848709
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 8,
+      "fraction_flagged": 0.0996309963099631
+    },
+    "timing": {
+      "train_seconds": 0.5205010409999886,
+      "ic_generation_seconds": 0.027779457999713486,
+      "ic_application_seconds": 0.0012427909996404196
+    },
+    "model_complexity": {
+      "nn_num_params": 2530,
+      "nn_flops_approx": 4864,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_phoneme_47_47_5",
+    "dataset": "phoneme",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 2566,
+      "val": 0,
+      "residual": 2567,
+      "test": 271
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "openml_phoneme_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 1489
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 64,
+        "num_epochs": 20,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 5,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8118081180811808,
+      "precision": 0.8111400773817866,
+      "recall": 0.8118081180811808,
+      "f1": 0.8114620010183549,
+      "confusion_matrix": [
+        [
+          166,
+          25
+        ],
+        [
+          26,
+          54
+        ]
+      ],
+      "num_errors": 51,
+      "error_rate": 0.1881918819188192
+    },
+    "metrics_post": {
+      "accuracy": 0.9003690036900369,
+      "precision": 0.9000308476186029,
+      "recall": 0.9003690036900369,
+      "f1": 0.9001857652450114,
+      "confusion_matrix": [
+        [
+          178,
+          13
+        ],
+        [
+          14,
+          66
+        ]
+      ],
+      "num_errors": 27,
+      "error_rate": 0.0996309963099631
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 8,
+      "fraction_flagged": 0.11439114391143912
+    },
+    "timing": {
+      "train_seconds": 0.5236307919994942,
+      "ic_generation_seconds": 0.028337584000837523,
+      "ic_application_seconds": 0.0013938749998487765
+    },
+    "model_complexity": {
+      "nn_num_params": 2530,
+      "nn_flops_approx": 4864,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_phoneme_47_47_5",
+    "dataset": "phoneme",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 2566,
+      "val": 0,
+      "residual": 2567,
+      "test": 271
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "openml_phoneme_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 1489
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 64,
+        "num_epochs": 20,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 5,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.8376383763837638,
+      "precision": 0.8376383763837638,
+      "recall": 0.8376383763837638,
+      "f1": 0.8376383763837638,
+      "confusion_matrix": [
+        [
+          169,
+          22
+        ],
+        [
+          22,
+          58
+        ]
+      ],
+      "num_errors": 44,
+      "error_rate": 0.16236162361623616
+    },
+    "metrics_post": {
+      "accuracy": 0.922509225092251,
+      "precision": 0.9228161287460828,
+      "recall": 0.922509225092251,
+      "f1": 0.9226481857423846,
+      "confusion_matrix": [
+        [
+          180,
+          11
+        ],
+        [
+          10,
+          70
+        ]
+      ],
+      "num_errors": 21,
+      "error_rate": 0.07749077490774908
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 7,
+      "fraction_flagged": 0.0959409594095941
+    },
+    "timing": {
+      "train_seconds": 0.4690909169994484,
+      "ic_generation_seconds": 0.031038416999763285,
+      "ic_application_seconds": 0.0013240830003269366
+    },
+    "model_complexity": {
+      "nn_num_params": 2530,
+      "nn_flops_approx": 4864,
+      "ic_rf": null
+    }
+  }
+]

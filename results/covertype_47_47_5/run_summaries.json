@@ -1,0 +1,1117 @@
+[
+  {
+    "experiment_name": "covertype_47_47_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 275980,
+      "val": 0,
+      "residual": 275981,
+      "test": 29051
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "covertype_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 3,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 50,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.6345048363223297,
+      "precision": 0.5408739446419218,
+      "recall": 0.6345048363223297,
+      "f1": 0.5838502436911012,
+      "confusion_matrix": [
+        [
+          8043,
+          2549,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3775,
+          10390,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1788,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          137,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          464,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          866,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          995,
+          31,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 10618,
+      "error_rate": 0.3654951636776703
+    },
+    "metrics_post": {
+      "accuracy": 0.784895528553234,
+      "precision": 0.7664867542349394,
+      "recall": 0.784895528553234,
+      "f1": 0.7623716743072264,
+      "confusion_matrix": [
+        [
+          8043,
+          1817,
+          732,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          162,
+          13265,
+          738,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          294,
+          1494,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          69,
+          68,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          240,
+          234,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          209,
+          659,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          68,
+          683,
+          275,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 6249,
+      "error_rate": 0.21510447144676603
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 8,
+      "fraction_flagged": 0.32869780730439574
+    },
+    "timing": {
+      "train_seconds": 6.717090875000395,
+      "ic_generation_seconds": 3.83761420799965,
+      "ic_application_seconds": 0.05421974999990198
+    },
+    "model_complexity": {
+      "nn_num_params": 15751,
+      "nn_flops_approx": 31104,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_47_47_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 275980,
+      "val": 0,
+      "residual": 275981,
+      "test": 29051
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "covertype_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 3,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 50,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.5640425458676122,
+      "precision": 0.5322834167911124,
+      "recall": 0.5640425458676122,
+      "f1": 0.47137038143981796,
+      "confusion_matrix": [
+        [
+          2537,
+          8055,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          316,
+          13849,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1788,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          137,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          475,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          868,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          591,
+          435,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 12665,
+      "error_rate": 0.43595745413238784
+    },
+    "metrics_post": {
+      "accuracy": 0.8099204846648996,
+      "precision": 0.7654293580794633,
+      "recall": 0.8099204846648996,
+      "f1": 0.7829567121264135,
+      "confusion_matrix": [
+        [
+          8300,
+          926,
+          1366,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          314,
+          13849,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          352,
+          56,
+          1380,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          52,
+          69,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          277,
+          54,
+          144,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          166,
+          78,
+          624,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          905,
+          7,
+          114,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 5522,
+      "error_rate": 0.19007951533510034
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 8,
+      "fraction_flagged": 0.39265429761453996
+    },
+    "timing": {
+      "train_seconds": 3.367483957999866,
+      "ic_generation_seconds": 3.7398972920000233,
+      "ic_application_seconds": 0.0566709169997921
+    },
+    "model_complexity": {
+      "nn_num_params": 15751,
+      "nn_flops_approx": 31104,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_47_47_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 275980,
+      "val": 0,
+      "residual": 275981,
+      "test": 29051
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "covertype_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 3,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 50,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.4944063887645864,
+      "precision": 0.48794947689141505,
+      "recall": 0.4944063887645864,
+      "f1": 0.4253607387461119,
+      "confusion_matrix": [
+        [
+          10226,
+          366,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10348,
+          3815,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          1460,
+          322,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          67,
+          70,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          148,
+          327,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          46,
+          757,
+          65,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1022,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 14688,
+      "error_rate": 0.5055936112354136
+    },
+    "metrics_post": {
+      "accuracy": 0.8379745963994355,
+      "precision": 0.7815891766458813,
+      "recall": 0.8379745963994355,
+      "f1": 0.7871224111484538,
+      "confusion_matrix": [
+        [
+          10226,
+          366,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          369,
+          13796,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1466,
+          322,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          125,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          463,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          866,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          42,
+          984,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 4707,
+      "error_rate": 0.16202540360056453
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 10,
+      "fraction_flagged": 0.4824618773880417
+    },
+    "timing": {
+      "train_seconds": 3.300305209000726,
+      "ic_generation_seconds": 3.868086417000086,
+      "ic_application_seconds": 0.07782979199964757
+    },
+    "model_complexity": {
+      "nn_num_params": 15751,
+      "nn_flops_approx": 31104,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_47_47_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 275980,
+      "val": 0,
+      "residual": 275981,
+      "test": 29051
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "covertype_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 3,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 50,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.6436267254139272,
+      "precision": 0.5536681655922615,
+      "recall": 0.6436267254139272,
+      "f1": 0.5891286820536534,
+      "confusion_matrix": [
+        [
+          6574,
+          4018,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2041,
+          12124,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1788,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          137,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          474,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          866,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          975,
+          51,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 10353,
+      "error_rate": 0.35637327458607276
+    },
+    "metrics_post": {
+      "accuracy": 0.775463839454752,
+      "precision": 0.7438072550340251,
+      "recall": 0.775463839454752,
+      "f1": 0.7530167441509303,
+      "confusion_matrix": [
+        [
+          8918,
+          881,
+          793,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1527,
+          12124,
+          514,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          214,
+          88,
+          1486,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          52,
+          69,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          200,
+          58,
+          217,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          132,
+          83,
+          653,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          776,
+          2,
+          248,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 6523,
+      "error_rate": 0.22453616054524803
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 7,
+      "fraction_flagged": 0.3005748511238856
+    },
+    "timing": {
+      "train_seconds": 3.39581970800009,
+      "ic_generation_seconds": 3.8045417909997923,
+      "ic_application_seconds": 0.04565695899964339
+    },
+    "model_complexity": {
+      "nn_num_params": 15751,
+      "nn_flops_approx": 31104,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_47_47_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475
+    },
+    "split_counts": {
+      "train": 275980,
+      "val": 0,
+      "residual": 275981,
+      "test": 29051
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "covertype_47_47_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.475,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          128,
+          64
+        ],
+        "activation": "relu",
+        "dropout": 0.3
+      },
+      "training": {
+        "batch_size": 512,
+        "num_epochs": 3,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 100,
+        "rf_max_depth": 12,
+        "rf_min_samples_leaf": 20,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.3,
+        "min_support": 50,
+        "error_class_weight": 10.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.6485835255240784,
+      "precision": 0.6050798786932672,
+      "recall": 0.6485835255240784,
+      "f1": 0.6198188622703771,
+      "confusion_matrix": [
+        [
+          8367,
+          2223,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4628,
+          9132,
+          405,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          445,
+          1343,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          135,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          22,
+          434,
+          19,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          343,
+          519,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1014,
+          12,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 10209,
+      "error_rate": 0.35141647447592167
+    },
+    "metrics_post": {
+      "accuracy": 0.8128463736188083,
+      "precision": 0.7668129646005857,
+      "recall": 0.8128463736188083,
+      "f1": 0.7774601317638158,
+      "confusion_matrix": [
+        [
+          8367,
+          2224,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          246,
+          13904,
+          15,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          445,
+          1343,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          86,
+          51,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          472,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          823,
+          45,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          57,
+          969,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "num_errors": 5437,
+      "error_rate": 0.1871536263811917
+    },
+    "baseline_rf": null,
+    "ic": {
+      "mode": "correction",
+      "num_rules": 8,
+      "fraction_flagged": 0.31603042924512065
+    },
+    "timing": {
+      "train_seconds": 3.415732958999797,
+      "ic_generation_seconds": 3.7885074999994686,
+      "ic_application_seconds": 0.048698083000090264
+    },
+    "model_complexity": {
+      "nn_num_params": 15751,
+      "nn_flops_approx": 31104,
+      "ic_rf": null
+    }
+  }
+]

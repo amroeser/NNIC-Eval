@@ -1,0 +1,115 @@
+{
+  "experiment_name": "openml_creditg_47_47_5",
+  "dataset": "credit-g",
+  "splits": {
+    "test_size": 0.05,
+    "val_size": 0.0,
+    "residual_size": 0.475
+  },
+  "split_counts": {
+    "train": 475,
+    "val": 0,
+    "residual": 475,
+    "test": 50
+  },
+  "seed": 46,
+  "config_snapshot": {
+    "experiment_name": "openml_creditg_47_47_5",
+    "seed": 46,
+    "base_output_dir": ".",
+    "dataset": {
+      "name": "openml",
+      "openml_id": 31
+    },
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.475,
+      "random_state": 42,
+      "stratify": true
+    },
+    "model": {
+      "type": "mlp",
+      "hidden_layers": [
+        64,
+        32
+      ],
+      "activation": "relu",
+      "dropout": 0.2
+    },
+    "training": {
+      "batch_size": 128,
+      "num_epochs": 10,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "device": "cpu"
+    },
+    "ic_generation": {
+      "miner": "cluster",
+      "rf_n_estimators": 50,
+      "rf_max_depth": 6,
+      "rf_min_samples_leaf": 3,
+      "rf_random_state": 42,
+      "min_error_fraction": 0.25,
+      "min_support": 10,
+      "min_expected_gain": 1,
+      "error_class_weight": 5.0
+    },
+    "ic_application": {
+      "mode": "correction"
+    }
+  },
+  "metrics_val": null,
+  "metrics_pre": {
+    "accuracy": 0.7,
+    "precision": 0.49,
+    "recall": 0.7,
+    "f1": 0.5764705882352941,
+    "confusion_matrix": [
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        35
+      ]
+    ],
+    "num_errors": 15,
+    "error_rate": 0.3
+  },
+  "metrics_post": {
+    "accuracy": 0.8,
+    "precision": 0.8444444444444444,
+    "recall": 0.8,
+    "f1": 0.7625,
+    "confusion_matrix": [
+      [
+        5,
+        10
+      ],
+      [
+        0,
+        35
+      ]
+    ],
+    "num_errors": 10,
+    "error_rate": 0.2
+  },
+  "baseline_rf": null,
+  "ic": {
+    "mode": "correction",
+    "num_rules": 7,
+    "fraction_flagged": 0.1
+  },
+  "timing": {
+    "train_seconds": 0.035949459000221395,
+    "ic_generation_seconds": 0.021560832999966806,
+    "ic_application_seconds": 0.001036333000229206
+  },
+  "model_complexity": {
+    "nn_num_params": 6114,
+    "nn_flops_approx": 12032,
+    "ic_rf": null
+  }
+}

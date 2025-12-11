@@ -1,0 +1,471 @@
+[
+  {
+    "id": 0,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -2.084492
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 0.945156
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -1.266229
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": 0.075139
+        },
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": -0.136583
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": 1.06372
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": 1.417231
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": 2.456337
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -1.062866
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": -0.422873
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 0,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 64,
+    "error_fraction": 0.578125,
+    "tree_index": 1
+  },
+  {
+    "id": 1,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": 1.131275
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": 4.22589
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": -0.169275
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": 1.952916
+        },
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -1.968168
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 0.127154
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -0.883593
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": 0.300112
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -1.32347
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": -0.475415
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 0,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 94,
+    "error_fraction": 0.43617021276595747,
+    "tree_index": 2
+  },
+  {
+    "id": 2,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -2.230586
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 1.536415
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -2.853305
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": -0.056161
+        },
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": -1.918989
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": 0.78262
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": -2.059393
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": -0.500597
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -1.449351
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": -0.301555
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 1,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 131,
+    "error_fraction": 0.3893129770992366,
+    "tree_index": 4
+  },
+  {
+    "id": 3,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -0.544118
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 2.337188
+        },
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": -1.805152
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": 0.623715
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -2.182553
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": 0.144801
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": -0.500597
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": 1.297286
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -1.327671
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": 0.193809
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 1,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 270,
+    "error_fraction": 0.35185185185185186,
+    "tree_index": 5
+  },
+  {
+    "id": 4,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -1.784593
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 1.435338
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -1.150817
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": 0.713211
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": 1.302672
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": 2.632551
+        },
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": -1.962611
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": -0.949461
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -1.076971
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": -0.114416
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 0,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 136,
+    "error_fraction": 0.4852941176470588,
+    "tree_index": 6
+  },
+  {
+    "id": 5,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -0.272261
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 1.959905
+        },
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": 0.267869
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": 2.353008
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -0.976606
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": 1.091188
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -1.059137
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": 0.899042
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": -0.034358
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": 1.685921
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 0,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 202,
+    "error_fraction": 0.3465346534653465,
+    "tree_index": 7
+  },
+  {
+    "id": 6,
+    "antecedent_clauses": [
+      [
+        {
+          "feature": "f2",
+          "op": ">",
+          "threshold": -1.746185
+        },
+        {
+          "feature": "f2",
+          "op": "<=",
+          "threshold": 1.915255
+        },
+        {
+          "feature": "f1",
+          "op": ">",
+          "threshold": -2.361983
+        },
+        {
+          "feature": "f1",
+          "op": "<=",
+          "threshold": 0.475742
+        },
+        {
+          "feature": "f4",
+          "op": ">",
+          "threshold": 1.560441
+        },
+        {
+          "feature": "f4",
+          "op": "<=",
+          "threshold": 3.293471
+        },
+        {
+          "feature": "f0",
+          "op": ">",
+          "threshold": -1.563204
+        },
+        {
+          "feature": "f0",
+          "op": "<=",
+          "threshold": 0.16687
+        },
+        {
+          "feature": "f3",
+          "op": ">",
+          "threshold": -1.861222
+        },
+        {
+          "feature": "f3",
+          "op": "<=",
+          "threshold": -0.962751
+        }
+      ]
+    ],
+    "consequent": [
+      {
+        "type": "set_class",
+        "target_class": 1,
+        "description": "Set prediction to majority true class in this clustered error region"
+      }
+    ],
+    "support": 36,
+    "error_fraction": 0.3333333333333333,
+    "tree_index": 9
+  }
+]

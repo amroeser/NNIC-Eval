@@ -1,0 +1,747 @@
+[
+  {
+    "experiment_name": "covertype_95_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 551961,
+      "val": 0,
+      "residual": 0,
+      "test": 29051
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "covertype_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "rf_n_estimators": 100,
+        "rf_max_depth": null,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.6,
+        "min_support": 50
+      },
+      "ic_application": {
+        "mode": "flagging"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7534680389659564,
+      "precision": 0.7542870823265928,
+      "recall": 0.7534680389659564,
+      "f1": 0.7444606957129173,
+      "confusion_matrix": [
+        [
+          7466,
+          3075,
+          0,
+          0,
+          11,
+          4,
+          36
+        ],
+        [
+          1772,
+          12139,
+          170,
+          0,
+          14,
+          64,
+          6
+        ],
+        [
+          0,
+          187,
+          1438,
+          8,
+          1,
+          154,
+          0
+        ],
+        [
+          0,
+          1,
+          57,
+          54,
+          0,
+          25,
+          0
+        ],
+        [
+          2,
+          379,
+          10,
+          0,
+          75,
+          9,
+          0
+        ],
+        [
+          2,
+          215,
+          346,
+          1,
+          3,
+          301,
+          0
+        ],
+        [
+          587,
+          23,
+          0,
+          0,
+          0,
+          0,
+          416
+        ]
+      ],
+      "num_errors": 7162,
+      "error_rate": 0.24653196103404357
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 21.330146417000833,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_95_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 551961,
+      "val": 0,
+      "residual": 0,
+      "test": 29051
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "covertype_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "rf_n_estimators": 100,
+        "rf_max_depth": null,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.6,
+        "min_support": 50
+      },
+      "ic_application": {
+        "mode": "flagging"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7525730611682903,
+      "precision": 0.7582100735634314,
+      "recall": 0.7525730611682903,
+      "f1": 0.7398777074001038,
+      "confusion_matrix": [
+        [
+          7486,
+          3093,
+          0,
+          0,
+          0,
+          1,
+          12
+        ],
+        [
+          1717,
+          12313,
+          106,
+          0,
+          3,
+          23,
+          3
+        ],
+        [
+          0,
+          304,
+          1350,
+          3,
+          0,
+          131,
+          0
+        ],
+        [
+          0,
+          0,
+          88,
+          24,
+          0,
+          25,
+          0
+        ],
+        [
+          2,
+          436,
+          9,
+          0,
+          28,
+          0,
+          0
+        ],
+        [
+          0,
+          270,
+          335,
+          0,
+          0,
+          263,
+          0
+        ],
+        [
+          604,
+          23,
+          0,
+          0,
+          0,
+          0,
+          399
+        ]
+      ],
+      "num_errors": 7188,
+      "error_rate": 0.24742693883170974
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 17.915514749999602,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_95_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 551961,
+      "val": 0,
+      "residual": 0,
+      "test": 29051
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "covertype_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "rf_n_estimators": 100,
+        "rf_max_depth": null,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.6,
+        "min_support": 50
+      },
+      "ic_application": {
+        "mode": "flagging"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7498192833293174,
+      "precision": 0.7557794062155379,
+      "recall": 0.7498192833293174,
+      "f1": 0.7400657125705956,
+      "confusion_matrix": [
+        [
+          6922,
+          3602,
+          1,
+          0,
+          0,
+          3,
+          64
+        ],
+        [
+          1393,
+          12384,
+          280,
+          0,
+          7,
+          98,
+          3
+        ],
+        [
+          0,
+          108,
+          1507,
+          10,
+          0,
+          163,
+          0
+        ],
+        [
+          0,
+          0,
+          44,
+          77,
+          0,
+          16,
+          0
+        ],
+        [
+          2,
+          406,
+          17,
+          0,
+          49,
+          1,
+          0
+        ],
+        [
+          1,
+          152,
+          403,
+          4,
+          0,
+          308,
+          0
+        ],
+        [
+          478,
+          12,
+          0,
+          0,
+          0,
+          0,
+          536
+        ]
+      ],
+      "num_errors": 7268,
+      "error_rate": 0.2501807166706826
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 19.26089895899986,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_95_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 551961,
+      "val": 0,
+      "residual": 0,
+      "test": 29051
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "covertype_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "rf_n_estimators": 100,
+        "rf_max_depth": null,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.6,
+        "min_support": 50
+      },
+      "ic_application": {
+        "mode": "flagging"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7598705724415683,
+      "precision": 0.7644041145388273,
+      "recall": 0.7598705724415683,
+      "f1": 0.7490409436655373,
+      "confusion_matrix": [
+        [
+          7397,
+          3145,
+          0,
+          0,
+          1,
+          0,
+          49
+        ],
+        [
+          1517,
+          12470,
+          132,
+          0,
+          12,
+          29,
+          5
+        ],
+        [
+          0,
+          336,
+          1370,
+          4,
+          0,
+          78,
+          0
+        ],
+        [
+          0,
+          0,
+          89,
+          37,
+          0,
+          11,
+          0
+        ],
+        [
+          5,
+          396,
+          10,
+          0,
+          63,
+          1,
+          0
+        ],
+        [
+          0,
+          264,
+          345,
+          1,
+          0,
+          258,
+          0
+        ],
+        [
+          522,
+          24,
+          0,
+          0,
+          0,
+          0,
+          480
+        ]
+      ],
+      "num_errors": 6976,
+      "error_rate": 0.24012942755843172
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 18.72861612500037,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "covertype_95_5",
+    "dataset": "covertype",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 551961,
+      "val": 0,
+      "residual": 0,
+      "test": 29051
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "covertype_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "covertype"
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          256,
+          128
+        ],
+        "activation": "relu",
+        "dropout": 0.1
+      },
+      "training": {
+        "batch_size": 256,
+        "num_epochs": 5,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "rf_n_estimators": 100,
+        "rf_max_depth": null,
+        "rf_min_samples_leaf": 10,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.6,
+        "min_support": 50
+      },
+      "ic_application": {
+        "mode": "flagging"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7517469278165984,
+      "precision": 0.7519802588718276,
+      "recall": 0.7517469278165984,
+      "f1": 0.7391640797830814,
+      "confusion_matrix": [
+        [
+          7270,
+          3151,
+          0,
+          0,
+          4,
+          1,
+          166
+        ],
+        [
+          1821,
+          12139,
+          157,
+          0,
+          11,
+          27,
+          10
+        ],
+        [
+          0,
+          235,
+          1503,
+          21,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          1,
+          61,
+          70,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          408,
+          15,
+          0,
+          52,
+          0,
+          0
+        ],
+        [
+          1,
+          240,
+          499,
+          14,
+          0,
+          114,
+          0
+        ],
+        [
+          317,
+          18,
+          0,
+          0,
+          0,
+          0,
+          691
+        ]
+      ],
+      "num_errors": 7212,
+      "error_rate": 0.2482530721834016
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 15.893169250000028,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 47879,
+      "nn_flops_approx": 94976,
+      "ic_rf": null
+    }
+  }
+]

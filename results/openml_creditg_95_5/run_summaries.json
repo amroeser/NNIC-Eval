@@ -1,0 +1,492 @@
+[
+  {
+    "experiment_name": "openml_creditg_95_5",
+    "dataset": "credit-g",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 950,
+      "val": 0,
+      "residual": 0,
+      "test": 50
+    },
+    "seed": 42,
+    "config_snapshot": {
+      "experiment_name": "openml_creditg_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 31
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.66,
+      "precision": 0.6275,
+      "recall": 0.66,
+      "f1": 0.6373333333333333,
+      "confusion_matrix": [
+        [
+          4,
+          11
+        ],
+        [
+          6,
+          29
+        ]
+      ],
+      "num_errors": 17,
+      "error_rate": 0.34
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 0.06550762499955454,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 6114,
+      "nn_flops_approx": 12032,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_creditg_95_5",
+    "dataset": "credit-g",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 950,
+      "val": 0,
+      "residual": 0,
+      "test": 50
+    },
+    "seed": 43,
+    "config_snapshot": {
+      "experiment_name": "openml_creditg_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 31
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7,
+      "precision": 0.49,
+      "recall": 0.7,
+      "f1": 0.5764705882352941,
+      "confusion_matrix": [
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "num_errors": 15,
+      "error_rate": 0.3
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 0.06407341700014513,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 6114,
+      "nn_flops_approx": 12032,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_creditg_95_5",
+    "dataset": "credit-g",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 950,
+      "val": 0,
+      "residual": 0,
+      "test": 50
+    },
+    "seed": 44,
+    "config_snapshot": {
+      "experiment_name": "openml_creditg_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 31
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7,
+      "precision": 0.49,
+      "recall": 0.7,
+      "f1": 0.5764705882352941,
+      "confusion_matrix": [
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "num_errors": 15,
+      "error_rate": 0.3
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 0.06226441699982388,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 6114,
+      "nn_flops_approx": 12032,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_creditg_95_5",
+    "dataset": "credit-g",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 950,
+      "val": 0,
+      "residual": 0,
+      "test": 50
+    },
+    "seed": 45,
+    "config_snapshot": {
+      "experiment_name": "openml_creditg_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 31
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7,
+      "precision": 0.49,
+      "recall": 0.7,
+      "f1": 0.5764705882352941,
+      "confusion_matrix": [
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "num_errors": 15,
+      "error_rate": 0.3
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 0.06432320800013258,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 6114,
+      "nn_flops_approx": 12032,
+      "ic_rf": null
+    }
+  },
+  {
+    "experiment_name": "openml_creditg_95_5",
+    "dataset": "credit-g",
+    "splits": {
+      "test_size": 0.05,
+      "val_size": 0.0,
+      "residual_size": 0.0
+    },
+    "split_counts": {
+      "train": 950,
+      "val": 0,
+      "residual": 0,
+      "test": 50
+    },
+    "seed": 46,
+    "config_snapshot": {
+      "experiment_name": "openml_creditg_95_5",
+      "seed": 46,
+      "base_output_dir": ".",
+      "dataset": {
+        "name": "openml",
+        "openml_id": 31
+      },
+      "splits": {
+        "test_size": 0.05,
+        "val_size": 0.0,
+        "residual_size": 0.0,
+        "random_state": 42,
+        "stratify": true
+      },
+      "model": {
+        "type": "mlp",
+        "hidden_layers": [
+          64,
+          32
+        ],
+        "activation": "relu",
+        "dropout": 0.2
+      },
+      "training": {
+        "batch_size": 128,
+        "num_epochs": 10,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "device": "cpu"
+      },
+      "ic_generation": {
+        "miner": "cluster",
+        "rf_n_estimators": 50,
+        "rf_max_depth": 6,
+        "rf_min_samples_leaf": 3,
+        "rf_random_state": 42,
+        "min_error_fraction": 0.25,
+        "min_support": 10,
+        "min_expected_gain": 1,
+        "error_class_weight": 5.0
+      },
+      "ic_application": {
+        "mode": "correction"
+      }
+    },
+    "metrics_val": null,
+    "metrics_pre": {
+      "accuracy": 0.7,
+      "precision": 0.49,
+      "recall": 0.7,
+      "f1": 0.5764705882352941,
+      "confusion_matrix": [
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          35
+        ]
+      ],
+      "num_errors": 15,
+      "error_rate": 0.3
+    },
+    "metrics_post": null,
+    "baseline_rf": null,
+    "ic": {
+      "mode": null,
+      "num_rules": 0,
+      "fraction_flagged": 0.0
+    },
+    "timing": {
+      "train_seconds": 0.06584962499982794,
+      "ic_generation_seconds": null,
+      "ic_application_seconds": null
+    },
+    "model_complexity": {
+      "nn_num_params": 6114,
+      "nn_flops_approx": 12032,
+      "ic_rf": null
+    }
+  }
+]
